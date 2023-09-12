@@ -53,7 +53,9 @@
 		<h2> 관리자 전용메뉴 </h2>
 		<h2><a href="./MemberList.me"> 회원정보 목록(list)</a></h2>
 	
-	
+		<hr>
+		
+		<h2><a href = "./ajaxTest.me" >ajax 테스트</a></h2>
 		
 		
 		

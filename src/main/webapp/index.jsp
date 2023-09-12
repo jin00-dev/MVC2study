@@ -15,9 +15,9 @@
 	<%
 // 		response.sendRedirect("./MemberJoin.me");
 // 		response.sendRedirect("./MemberLogin.me");
-// 		response.sendRedirect("./Main.me");
+		response.sendRedirect("./Main.me");
 // 		response.sendRedirect("./BoardWrite.bo");
-		response.sendRedirect("./BoardList.bo");
+// 		response.sendRedirect("./BoardList.bo");
 	%>
 
 

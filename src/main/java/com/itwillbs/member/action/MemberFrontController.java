@@ -182,6 +182,32 @@ public class MemberFrontController extends HttpServlet {
 				e.printStackTrace();
 			}
 		}
+		else if(command.equals("/ajaxTest.me")) {
+			System.out.println(" C : /ajaxTest.me 호출");
+			System.out.println(" C :  패턴1 - DB사용 X, 페이지 출력");
+			
+			forward = new ActionForward();
+			forward.setPath("./ajax/ajaxTest.jsp");
+			forward.setRedirect(false);
+		}
+		else if(command.equals("/AjaxData.me")) {
+			System.out.println(" C : /AjaxData.me 호출");
+			System.out.println(" C :  패턴2,3번 처럼 사용됨 - Action객체 만들어서 사용");
+			
+			// AjaxDataAction 객체 생성 
+			action = new AjaxDataAction();
+			try {
+				forward = action.execute(request, response);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			
+			
+			
+			
+		}
+		
+		
 		
 		System.out.println("\n C : 2. 가상주소 매핑 - 끝 ");
 		/****************2. 가상주소 매핑 ****************/
